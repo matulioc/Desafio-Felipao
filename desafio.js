@@ -1,36 +1,29 @@
-var nivelExp;
-var nivelRank;
+let playerWin 
+let playerLose
+let i=0;
+
+do  { i ; i++ ;
 const prompt = require("prompt-sync")();
-nomeHeroi = prompt('Digite o seu nome do seu Herói : ')
-nivelExp = prompt('Digite sua experiência : ')
-if (nivelExp>=10001){
-  nivelRank = "Radiante"}
-else 
-if(nivelExp>=9001){
-  nivelRank = "Imortal"
-}
-else 
-if(nivelExp>=8001){
-  nivelRank = "Ascendente"
-}
-else 
-if(nivelExp>=7001){
-  nivelRank = "Platina"
-}
-else 
-if(nivelExp>=5001){
-  nivelRank = "Ouro"
-}
-else 
-if(nivelExp>=2001){
-  nivelRank = "Prata"
-}
-else 
-if(nivelExp>=1001){
-  nivelRank = "Bronze"
-}
-else 
-if(nivelExp<=1000){
-  nivelRank = "Ferro"
-}
-console.log("O Herói de nome " + nomeHeroi +" está no nível de " + nivelRank)
+playerWin = prompt('Digite o número de vitórias:')
+playerLose = prompt('Digite o número de derrotas:')
+
+totalWins = playerWin - playerLose
+
+function printWins (){
+   console.log ("O Herói tem saldo de " + totalWins +" vitórias e está no nível de " + playerRank)}
+
+if (totalWins >= 101 ){
+  playerRank = "Imortal"}else     
+    if (totalWins >= 81 && totalWins <= 100){
+      playerRank ="Lendário"} else 
+        if (totalWins >= 51 && totalWins <= 80){
+          playerRank = "Ouro"} else
+            if (totalWins >= 21 && totalWins <= 50){
+              playerRank = "Prata"} else
+                if (totalWins >= 11 && totalWins <= 20){
+                  playerRank = "Bronze"}else
+                    if (totalWins <= 10){
+                      playerRank = "Ferro"} 
+
+printWins()}
+while (i<999);
