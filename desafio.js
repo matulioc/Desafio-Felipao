@@ -37,4 +37,4 @@ if(nivelExp<=1000){
   nivelRank = "Ferro"}
 
 console.log("O Herói de nome " + nomeHeroi +" está no nível de " + nivelRank)}
-while(doAgain<999
+while(doAgain<999)
