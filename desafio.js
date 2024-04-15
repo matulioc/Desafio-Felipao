@@ -1,6 +1,8 @@
 var nomeHeroi;
 var nivelExp;
 var nivelRank;
+let doAgain = 1;
+do  { doAgain ; doAgain++ ;
 const prompt = require("prompt-sync")();
 nomeHeroi = prompt('Digite o seu nome do seu Herói : ')
 nivelExp = prompt('Digite sua experiência : ')
@@ -32,6 +34,7 @@ if(nivelExp>=1001){
 }
 else 
 if(nivelExp<=1000){
-  nivelRank = "Ferro"
-}
-console.log("O Herói de nome " + nomeHeroi +" está no nível de " + nivelRank)
+  nivelRank = "Ferro"}
+
+console.log("O Herói de nome " + nomeHeroi +" está no nível de " + nivelRank)}
+while(doAgain<999
